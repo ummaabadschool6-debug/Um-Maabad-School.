@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدرسة أم معبد الثانوية للبنات - بوابة التعلم الإلكتروني</title>
+    <meta name="description" content="البوابة التعليمية الذكية لمدرسة أم معبد الثانوية للبنات. امتحانات محوسبة، ودروس مصورة للمرحلة الأساسية والثانوية.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- الهيدر (رأس الصفحة) -->
+    <header>
+        <div class="header-container">
+            <div class="school-logo-title">
+                <div class="school-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 3L1 9L12 15L21 10V17H23V9L12 3M12 5.18L18.73 9L12 12.82L5.27 9L12 5.18M12 17C10.74 17 9.5 16.64 8.44 16L7.25 17.5C8.66 18.5 10.3 19 12 19C13.7 19 15.34 18.5 16.75 17.5L15.56 16C14.5 16.64 13.26 17 12 17M12 21C10.11 21 8.27 20.46 6.7 19.46L5.5 20.96C7.39 22.28 9.66 23 12 23C14.34 23 16.61 22.28 18.5 20.96L17.3 19.46C15.73 20.46 13.89 21 12 21Z"/>
+                    </svg>
+                </div>
+                <div class="school-name-text">
+                    <h1>مدرسة أم معبد الثانوية للبنات</h1>
+                    <p>بوابة الطالبة للتعلم التفاعلي والذكي</p>
+                </div>
+            </div>
+            <div class="quick-nav">
+                <button id="btn-theme-toggle" class="btn-home-icon" title="تبديل الوضع الداكن/الفاتح">
+                    <svg id="theme-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 2c-1.82 0-3.53.5-5 1.35C7.99 5.08 10 8.3 10 12s-2.01 6.92-5 8.65C6.47 21.5 8.18 22 10 22c5.52 0 10-4.48 10-10S15.52 2 10 2z"/>
+                    </svg>
+                </button>
+                <button id="btn-home" class="btn-home-icon" title="الرئيسية">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- المحتوى الرئيسي للموقع -->
+    <main>
+        
+        <!-- شريط التقدم التفاعلي -->
+        <div class="progress-bar-container">
+            <div class="progress-step active" data-step="1">
+                <div class="step-num">١</div>
+                <div class="step-label">الترحيب</div>
+            </div>
+            <div class="progress-step" data-step="2">
+                <div class="step-num">٢</div>
+                <div class="step-label">الصف</div>
+            </div>
+            <div class="progress-step" data-step="3">
+                <div class="step-num">٣</div>
+                <div class="step-label">المادة</div>
+            </div>
+            <div class="progress-step" data-step="4">
+                <div class="step-num">٤</div>
+                <div class="step-label">الفصل</div>
+            </div>
+            <div class="progress-step" data-step="5">
+                <div class="step-num">٥</div>
+                <div class="step-label">الخدمة</div>
+            </div>
+            <div class="progress-step" data-step="6">
+                <div class="step-num">٦</div>
+                <div class="step-label">المحتوى</div>
+            </div>
+        </div>
+
+        <!-- شاشات الموقع التفاعلية -->
+
+        <!-- الشاشة 1: الترحيب بالتعريف عن المدرسة -->
+        <div id="screen-welcome" class="screen active">
+            <div class="welcome-hero">
+                <span class="welcome-badge">أهلاً بكِ في رحاب العلم والتميز</span>
+                <h2>بوابة مدرسة أم معبد الثانوية</h2>
+                <p class="tagline">نهيئ عقولاً تبني المستقبل وترقى بالوطن</p>
+            </div>
+
+            <div class="biography-section">
+                <div class="biography-title">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                    </svg>
+                    <span>عن مدرسة أم معبد الثانوية للبنات</span>
+                </div>
+                <p class="biography-text">
+                    تعد مدرسة أم معبد الثانوية للبنات من المدارس الحكومية العريقة والمتميزة في العاصمة عمان، وتحديداً في منطقة جبل التاج. وتتبع المدرسة لمديرية التربية والتعليم للواء قصبة عمان التابعة لوزارة التربية والتعليم الأردنية. نسعى دائماً بجهود كادرنا الإداري والتعليمي المتميز إلى توفير بيئة تربوية تفاعلية وآمنة تعزز التميز الأكاديمي والمهاري لطالباتنا الحبيبات، وتعدهن لبناء مستقبل واعد لوطنهن ومجتمعهن.
+                </p>
+            </div>
+
+            <div class="navigation-controls">
+                <div></div> <!-- فراغ للموازنة البصرية -->
+                <button id="welcome-next" class="btn btn-primary">
+                    ابدئي رحلتكِ التعليمية
+                    <svg viewBox="0 0 24 24" width="18" height="18">
+                        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- الشاشة 2: اختيار الصف -->
+        <div id="screen-class" class="screen">
+            <h2 class="screen-title">اختر الصف الدراسي</h2>
+            <p class="screen-subtitle">يرجى تحديد صفك الحالي لعرض المواد الدراسية المخصصة لك</p>
+
+            <div class="selection-grid" id="class-grid">
+                <!-- كروت الصفوف -->
+                <div class="selection-card" data-class="7">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 3L1 9L12 15L21 10V17H23V9L12 3Z"/></svg>
+                    </div>
+                    <span class="card-title">الصف السابع</span>
+                </div>
+                <div class="selection-card" data-class="8">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 3L1 9L12 15L21 10V17H23V9L12 3Z"/></svg>
+                    </div>
+                    <span class="card-title">الصف الثامن</span>
+                </div>
+                <div class="selection-card" data-class="9">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 3L1 9L12 15L21 10V17H23V9L12 3Z"/></svg>
+                    </div>
+                    <span class="card-title">الصف التاسع</span>
+                </div>
+                <div class="selection-card" data-class="10">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 3L1 9L12 15L21 10V17H23V9L12 3Z"/></svg>
+                    </div>
+                    <span class="card-title">الصف العاشر</span>
+                </div>
+                <div class="selection-card" data-class="11">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 3L1 9L12 15L21 10V17H23V9L12 3Z"/></svg>
+                    </div>
+                    <span class="card-title">الأول ثانوي</span>
+                </div>
+            </div>
+
+            <div class="navigation-controls">
+                <button class="btn btn-secondary back-btn">
+                    <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                    السابق
+                </button>
+                <button class="btn btn-primary next-btn" disabled>
+                    التالي
+                    <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- الشاشة 3: اختيار المادة -->
+        <div id="screen-subject" class="screen">
+            <h2 class="screen-title">اختر المادة الدراسية</h2>
+            <p class="screen-subtitle">اختر المادة التي ترغب في تصفح محتواها التعليمي</p>
+
+            <div class="selection-grid" id="subject-grid">
+                <!-- سيتم ملؤه ديناميكياً بالـ JavaScript -->
+            </div>
+
+            <div class="navigation-controls">
+                <button class="btn btn-secondary back-btn">
+                    <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                    السابق
+                </button>
+                <button class="btn btn-primary next-btn" disabled>
+                    التالي
+                    <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- الشاشة 4: اختيار الفصل الدراسي -->
+        <div id="screen-semester" class="screen">
+            <h2 class="screen-title">اختر الفصل الدراسي</h2>
+            <p class="screen-subtitle">حدد الفصل الدراسي لعرض المواد والاختبارات المطابقة</p>
+
+            <div class="selection-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                <div class="selection-card" data-semester="1">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+                    </div>
+                    <span class="card-title">الفصل الدراسي الأول</span>
+                </div>
+                <div class="selection-card" data-semester="2">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+                    </div>
+                    <span class="card-title">الفصل الدراسي الثاني</span>
+                </div>
+            </div>
+
+            <div class="navigation-controls">
+                <button class="btn btn-secondary back-btn">
+                    <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                    السابق
+                </button>
+                <button class="btn btn-primary next-btn" disabled>
+                    التالي
+                    <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- الشاشة 5: اختيار نوع الخدمة -->
+        <div id="screen-service" class="screen">
+            <h2 class="screen-title">ماذا تبحثين عنه اليوم؟</h2>
+            <p class="screen-subtitle">حددي نوع المحتوى المطلوب لتسريع وصولك إلى الخدمة</p>
+
+            <div class="service-options">
+                <div class="service-card" data-service="exams">
+                    <div class="service-icon-wrapper">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/>
+                        </svg>
+                    </div>
+                    <div class="service-details">
+                        <h3>امتحانات محوسبة</h3>
+                        <p>قائمة باختبارات تفاعلية ذكية لقياس مستواك المعرفي ومساعدتك في المذاكرة الذاتية مع تصحيح فوري.</p>
+                    </div>
+                </div>
+
+                <div class="service-card" data-service="lessons">
+                    <div class="service-icon-wrapper">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"/>
+                        </svg>
+                    </div>
+                    <div class="service-details">
+                        <h3>دروس معروضة</h3>
+                        <p>شروحات مرئية تفاعلية وفيديوهات تعليمية متميزة للمواضيع والوحدات المختلفة بأفضل الطرق البصرية.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-controls">
+                <button class="btn btn-secondary back-btn">
+                    <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                    السابق
+                </button>
+                <button class="btn btn-primary next-btn" disabled>
+                    التالي
+                    <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- الشاشة 6: شاشة الروابط النهائية -->
+        <div id="screen-results" class="screen">
+            <div class="results-header">
+                <div class="results-summary-badge" id="results-badge">
+                    <!-- سيتم تحديثه برمجياً -->
+                </div>
+                <h2 class="results-title" id="results-title">الروابط المتوفرة</h2>
+            </div>
+
+            <!-- قائمة الروابط -->
+            <div class="links-list" id="links-container">
+                <!-- سيتم إنشاؤها بالـ JavaScript -->
+            </div>
+
+            <div class="navigation-controls">
+                <button class="btn btn-secondary back-btn">
+                    <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                    تعديل الاختيارات
+                </button>
+                <button id="btn-restart" class="btn btn-primary">
+                    <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+                    ابدئي من جديد
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- الفوتر (أسفل الصفحة) -->
+    <footer>
+        <div class="footer-content">
+            <p>جميع الحقوق محفوظة لمدرسة <strong>أم معبد الثانوية للبنات</strong> © ٢٠٢٦</p>
+            <p>تم التصميم بأعلى معايير الويب التفاعلية لدعم مسيرتكِ الأكاديمية</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
