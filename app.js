@@ -28,21 +28,21 @@ const SUBJECTS_HIGH = [
 
 // أيقونات SVG للمواد المختلفة لتظهر بشكل جذاب
 const SVG_ICONS = {
-    "book-open": `<svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>`, // كتاب
-    "feather": `<svg viewBox="0 0 24 24"><path d="M2.01 21L23 2.01 20.99 0 0 18.99 2.01 21zM16 8.41V6h-2.41L16 8.41zM13 14H9v-4h4v4z"/></svg>`, // ريشة/قلم
-    "mosque": `<svg viewBox="0 0 24 24"><path d="M12 2L2 9h3v13h6v-6h2v6h6V9h3L12 2zm0 11.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>`, // مسجد
-    "laptop": `<svg viewBox="0 0 24 24"><path d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>`, // كمبيوتر
-    "globe": `<svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.53c-.26-.81-1-1.4-1.9-1.4h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>`, // كرة أرضية
-    "flask": `<svg viewBox="0 0 24 24"><path d="M6 22h12a2 2 0 0 0 2-2c0-.5-.17-.96-.47-1.33L15 11.45V5h1a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1v6.45L3.47 18.67A1.972 1.972 0 0 0 3 20a2 2 0 0 0 2 2h1zM13.5 19a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-3-5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>`, // علوم
-    "coins": `<svg viewBox="0 0 24 24"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>`, // مالية
-    "tools": `<svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.3C.5 6.7.9 9.8 2.9 11.8c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.1z"/></svg>`, // مهنية
-    "hourglass-half": `<svg viewBox="0 0 24 24"><path d="M6 2v6h.01L6 8.01 10 12l-4 4 .01.01H6v6h12v-6h-.01L18 15.99 14 12l4-3.99L17.99 8H18V2H6zm10 14.5V20H8v-3.5l4-4 4 4zm-4-5l-4-4V4h8v3.5l-4 4z"/></svg>`, // تاريخ
-    "map-marked": `<svg viewBox="0 0 24 24"><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/></svg>`, // جغرافيا
-    "landmark": `<svg viewBox="0 0 24 24"><path d="M12 2L1 7v2h22V7L12 2zm1 10h3v7h-3v-7zm-6 0h3v7H7v-7zm12 9H5v2h14v-2zm-1-9h3v7h-3v-7z"/></svg>`, // وطنية
-    "atom": `<svg viewBox="0 0 24 24"><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10zm1-17.93c3.95.49 7 3.85 7 7.93h-7V4.07zm-2 0V12H4.07c.49-3.95 3.85-7 7.93-7zm0 9.93V20c-4.08-.49-7.44-3.85-7.93-7.93H10zm2 0h7.93c-.49 4.08-3.85 7.44-7.93 7.93v-7.93z"/></svg>`, // فيزياء
-    "vials": `<svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-8 14H7v-2h4v2zm0-4H7v-2h4v2zm0-4H7V7h4v2zm6 12h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg>`, // كيمياء
-    "dna": `<svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg>`, // أحياء
-    "mountain": `<svg viewBox="0 0 24 24"><path d="M14 6l-3.75 5 2.85 3.8c-.9.23-1.6.8-2 1.6l-2.1-2.8L3 20h18L14 6z"/></svg>`, // علوم أرض
+    "book-open": `<svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>`,
+    "feather": `<svg viewBox="0 0 24 24"><path d="M2.01 21L23 2.01 20.99 0 0 18.99 2.01 21zM16 8.41V6h-2.41L16 8.41zM13 14H9v-4h4v4z"/></svg>`,
+    "mosque": `<svg viewBox="0 0 24 24"><path d="M12 2L2 9h3v13h6v-6h2v6h6V9h3L12 2zm0 11.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>`,
+    "laptop": `<svg viewBox="0 0 24 24"><path d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>`,
+    "globe": `<svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.53c-.26-.81-1-1.4-1.9-1.4h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>`,
+    "flask": `<svg viewBox="0 0 24 24"><path d="M6 22h12a2 2 0 0 0 2-2c0-.5-.17-.96-.47-1.33L15 11.45V5h1a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1v6.45L3.47 18.67A1.972 1.972 0 0 0 3 20a2 2 0 0 0 2 2h1zM13.5 19a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-3-5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>`,
+    "coins": `<svg viewBox="0 0 24 24"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>`,
+    "tools": `<svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.3C.5 6.7.9 9.8 2.9 11.8c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.1z"/></svg>`,
+    "hourglass-half": `<svg viewBox="0 0 24 24"><path d="M6 2v6h.01L6 8.01 10 12l-4 4 .01.01H6v6h12v-6h-.01L18 15.99 14 12l4-3.99L17.99 8H18V2H6zm10 14.5V20H8v-3.5l4-4 4 4zm-4-5l-4-4V4h8v3.5l-4 4z"/></svg>`,
+    "map-marked": `<svg viewBox="0 0 24 24"><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/></svg>`,
+    "landmark": `<svg viewBox="0 0 24 24"><path d="M12 2L1 7v2h22V7L12 2zm1 10h3v7h-3v-7zm-6 0h3v7H7v-7zm12 9H5v2h14v-2zm-1-9h3v7h-3v-7z"/></svg>`,
+    "atom": `<svg viewBox="0 0 24 24"><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10zm1-17.93c3.95.49 7 3.85 7 7.93h-7V4.07zm-2 0V12H4.07c.49-3.95 3.85-7 7.93-7zm0 9.93V20c-4.08-.49-7.44-3.85-7.93-7.93H10zm2 0h7.93c-.49 4.08-3.85 7.44-7.93 7.93v-7.93z"/></svg>`,
+    "vials": `<svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-8 14H7v-2h4v2zm0-4H7v-2h4v2zm0-4H7V7h4v2zm6 12h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2z"/></svg>`,
+    "dna": `<svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg>`,
+    "mountain": `<svg viewBox="0 0 24 24"><path d="M14 6l-3.75 5 2.85 3.8c-.9.23-1.6.8-2 1.6l-2.1-2.8L3 20h18L14 6z"/></svg>`,
     "file-alt": `<svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>`,
     "play-circle": `<svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>`
 };
@@ -129,7 +129,7 @@ function initApp() {
         }
     });
 
-    // تهيئة كروت اختيار الصف (مرة واحدة)
+    // تهيئة كروت اختيار الصف
     const classCards = document.querySelectorAll("#screen-class .selection-card");
     classCards.forEach(card => {
         card.addEventListener("click", () => {
@@ -143,7 +143,7 @@ function initApp() {
         });
     });
 
-    // تهيئة كروت اختيار الفصل الدراسي (مرة واحدة)
+    // تهيئة كروت اختيار الفصل الدراسي
     const semesterCards = document.querySelectorAll("#screen-semester .selection-card");
     semesterCards.forEach(card => {
         card.addEventListener("click", () => {
@@ -157,7 +157,7 @@ function initApp() {
         });
     });
 
-    // تهيئة كروت اختيار نوع الخدمة (مرة واحدة)
+    // تهيئة كروت اختيار نوع الخدمة
     const serviceCards = document.querySelectorAll(".service-card");
     serviceCards.forEach(card => {
         card.addEventListener("click", () => {
@@ -176,12 +176,9 @@ function initApp() {
 function goToStep(stepNum) {
     if (stepNum < 1 || stepNum > 6) return;
 
-    // تشغيل العمليات الوسيطة الخاصة بالخطوة المنتقل إليها
     if (stepNum === 3) {
-        // قمنا بالانتقال لشاشة المواد -> نقوم ببنائها ديناميكياً بناءً على الصف المختار
         buildSubjectGrid();
     } else if (stepNum === 4) {
-        // نتحقق إذا كان هناك اختيار سابق
         const nextBtn = document.querySelector("#screen-semester .next-btn");
         if (state.selectedSemester) {
             const savedCard = document.querySelector(`#screen-semester [data-semester="${state.selectedSemester}"]`);
@@ -191,7 +188,6 @@ function goToStep(stepNum) {
             if (nextBtn) nextBtn.setAttribute("disabled", "true");
         }
     } else if (stepNum === 5) {
-        // نتحقق إذا كان هناك اختيار سابق
         const nextBtn = document.querySelector("#screen-service .next-btn");
         if (state.selectedService) {
             const savedCard = document.querySelector(`.service-card[data-service="${state.selectedService}"]`);
@@ -201,11 +197,9 @@ function goToStep(stepNum) {
             if (nextBtn) nextBtn.setAttribute("disabled", "true");
         }
     } else if (stepNum === 6) {
-        // شاشة الروابط النهائية
         generateFinalLinks();
     }
 
-    // إخفاء الشاشة الحالية وعرض الشاشة الجديدة
     const currentScreenId = stepScreens[state.currentStep];
     const targetScreenId = stepScreens[stepNum];
 
@@ -213,7 +207,6 @@ function goToStep(stepNum) {
     const targetScreen = document.getElementById(targetScreenId);
     targetScreen.classList.add("active");
 
-    // تحديث خطوة شريط التقدم
     state.currentStep = stepNum;
     updateProgressBar();
 }
@@ -235,36 +228,30 @@ function updateProgressBar() {
 
 // إعادة تصفير التطبيق والعودة لشاشة الترحيب
 function resetToStart() {
-    // تفريغ المدخلات المحددة
     state.selectedClass = null;
     state.selectedSubject = null;
     state.selectedSemester = null;
     state.selectedService = null;
     
-    // إزالة تحديد الكروت في كافة الشاشات
     document.querySelectorAll(".selection-card, .service-card").forEach(card => {
         card.classList.remove("selected");
     });
 
-    // تعطيل أزرار التالي مجدداً لحين الاختيار
     document.querySelectorAll(".next-btn").forEach(btn => {
         btn.setAttribute("disabled", "true");
     });
 
-    // الانتقال للخطوة الأولى
     goToStep(1);
 }
 
 // بناء قائمة المواد بشكل ديناميكي حسب الصف
 function buildSubjectGrid() {
     const grid = document.getElementById("subject-grid");
-    grid.innerHTML = ""; // تصفير المحتوى السابق
+    grid.innerHTML = "";
     
-    // تعطيل زر التالي تلقائياً لحين اختيار مادة
     const nextBtn = document.querySelector("#screen-subject .next-btn");
     if (nextBtn) nextBtn.setAttribute("disabled", "true");
 
-    // تحديد قائمة المواد الملائمة للصف المختار
     const classNum = parseInt(state.selectedClass);
     const subjectsList = (classNum === 7 || classNum === 8) ? SUBJECTS_BASIC : SUBJECTS_HIGH;
 
@@ -273,33 +260,25 @@ function buildSubjectGrid() {
         card.className = "selection-card";
         card.setAttribute("data-subject", subj.id);
         
-        // إحضار أيقونة الـ SVG الخاصة بالمادة
         const svgContent = SVG_ICONS[subj.icon] || SVG_ICONS["book-open"];
 
         card.innerHTML = `
-            <div class="card-icon">
-                ${svgContent}
-            </div>
+            <div class="card-icon">${svgContent}</div>
             <span class="card-title">${subj.name}</span>
         `;
 
         card.addEventListener("click", () => {
-            // إزالة التحديد من باقي المواد
             grid.querySelectorAll(".selection-card").forEach(c => c.classList.remove("selected"));
-            
-            // تحديد المادة الحالية وحفظها في الحالة
             card.classList.add("selected");
             state.selectedSubject = subj.id;
             state.data.subjectName = subj.name;
 
-            // تفعيل زر التالي
             if (nextBtn) nextBtn.removeAttribute("disabled");
         });
 
         grid.appendChild(card);
     });
 
-    // لو كانت المادة مختارة سابقاً نعيد تفعيلها (في حال ضغطت الطالبة "السابق" ثم عادت)
     if (state.selectedSubject) {
         const savedCard = grid.querySelector(`[data-subject="${state.selectedSubject}"]`);
         if (savedCard) {
@@ -313,7 +292,6 @@ function generateFinalLinks() {
     const badge = document.getElementById("results-badge");
     const container = document.getElementById("links-container");
     
-    // إعداد البادج التعريفي
     badge.innerHTML = `
         <strong>${state.data.className}</strong>
         <span>&bull;</span>
@@ -324,10 +302,8 @@ function generateFinalLinks() {
         <strong>${state.data.serviceName}</strong>
     `;
 
-    // تنظيف الحاوية
     container.innerHTML = "";
 
-    // جلب الروابط المقترحة أو النموذجية
     const links = getLinksDatabase(
         state.selectedClass, 
         state.selectedSubject, 
@@ -356,9 +332,7 @@ function generateFinalLinks() {
 
         linkElement.innerHTML = `
             <div class="link-content">
-                <div class="link-icon-container">
-                    ${iconSvg}
-                </div>
+                <div class="link-icon-container">${iconSvg}</div>
                 <div class="link-info">
                     <h4>${link.title}</h4>
                     <p>${link.description}</p>
@@ -377,10 +351,26 @@ function generateFinalLinks() {
 }
 
 /**
- * دالة ذكية لإرجاع روابط تفاعلية مصممة خصيصاً للمادة، الصف، والفصل المختار.
- * يمكن لإدارة المدرسة لاحقاً وضع روابط حقيقية هنا ببساطة تامة.
+ * =========================================================================
+ * 🔗 جدول الروابط الخاصة بمدرسة أم معبد (سهل التعديل والإضافة)
+ * =========================================================================
  */
+const SCHOOL_CUSTOM_LINKS = {
+    "10-physics-1-lessons": [
+        {
+            title: "الكميات القياسية والكميات المتجهة 1",
+            description: "شروحات تفاعلية ومرئية متميزة لمادة الفيزياء للصف العاشر - الفصل الدراسي الأول.",
+            url: "https://youtu.be/mtMYVd9iOCc?si=lDzrQrT0ktUpAgZ4"
+        }
+    ]
+};
+
 function getLinksDatabase(classId, subjectId, semesterId, serviceId) {
+    const customKey = `${classId}-${subjectId}-${semesterId}-${serviceId}`;
+    if (SCHOOL_CUSTOM_LINKS[customKey] && SCHOOL_CUSTOM_LINKS[customKey].length > 0) {
+        return SCHOOL_CUSTOM_LINKS[customKey];
+    }
+
     const isExam = serviceId === "exams";
     const semName = semesterId === "1" ? "الفصل الأول" : "الفصل الثاني";
     const classNameMap = {
@@ -392,7 +382,6 @@ function getLinksDatabase(classId, subjectId, semesterId, serviceId) {
     };
     const cName = classNameMap[classId] || "";
     
-    // سنستخدم أسماء مواد حقيقية للتخصيص
     const subjNameMap = {
         "english": "اللغة الإنجليزية",
         "arabic": "اللغة العربية",
@@ -417,26 +406,25 @@ function getLinksDatabase(classId, subjectId, semesterId, serviceId) {
             {
                 title: `الاختبار المحوسب الأول - مادة ${sName} - ${cName}`,
                 description: `اختبار تفاعلي يغطي الوحدات الأولى من مقرر ${semName}. قياس فوري للمستوى الدراسي مع تقديم الإرشادات.`,
-                url: "#" // ضع رابط نموذج الامتحان هنا (Google Forms مثلاً)
+                url: "#"
             },
             {
                 title: `الاختبار المحوسب الثاني (المنتصف) - مادة ${sName} - ${cName}`,
                 description: `اختبار تجريبي شامل ومحاكي للامتحانات الشهرية لـ ${sName} - ${semName}.`,
-                url: "#" // ضع رابط نموذج الامتحان هنا
+                url: "#"
             },
             {
                 title: `الاختبار النهائي الشامل - مادة ${sName} - ${cName}`,
                 description: `بنك الأسئلة والمراجعة النهائية المحوسبة لكامل مقرر المادة لـ ${semName}.`,
-                url: "#" // ضع رابط نموذج الامتحان هنا
+                url: "#"
             }
         ];
     } else {
-        // دروس مرئية وفيديوهات
         return [
             {
                 title: `شرح الوحدة الأولى (مفاهيم أساسية) - مادة ${sName} - ${cName}`,
                 description: `فيديو مصور لشرح الأساسيات والمصطلحات الرئيسية لـ ${sName} لـ ${semName}.`,
-                url: "#" // ضع رابط الدرس التعليمي هنا (YouTube مثلاً)
+                url: "#"
             },
             {
                 title: `حل أنشطة وأسئلة الكتاب المقررة - مادة ${sName}`,
@@ -452,15 +440,12 @@ function getLinksDatabase(classId, subjectId, semesterId, serviceId) {
     }
 }
 
-// تحديث أيقونة زر تبديل الثيم (القمر/الشمس)
 function updateThemeIcon(isDark) {
     const themeIcon = document.getElementById("theme-icon");
     if (themeIcon) {
         if (isDark) {
-            // أيقونة الشمس عند تفعيل الوضع الداكن (للعودة للفاتح)
             themeIcon.innerHTML = `<path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/>`;
         } else {
-            // أيقونة القمر عند تفعيل الوضع الفاتح (لتبديل للداكن)
             themeIcon.innerHTML = `<path d="M10 2c-1.82 0-3.53.5-5 1.35C7.99 5.08 10 8.3 10 12s-2.01 6.92-5 8.65C6.47 21.5 8.18 22 10 22c5.52 0 10-4.48 10-10S15.52 2 10 2z"/>`;
         }
     }
