@@ -1,5 +1,6 @@
 // إعدادات وبيانات المواد للمراحل الدراسية المختلفة
 const SUBJECTS_BASIC = [
+    { id: "math", name: "رياضيات", icon: "book-open" },
     { id: "english", name: "لغة إنجليزية", icon: "book-open" },
     { id: "arabic", name: "لغة عربية", icon: "feather" },
     { id: "islamic", name: "تربية إسلامية", icon: "mosque" },
@@ -10,6 +11,7 @@ const SUBJECTS_BASIC = [
     { id: "vocational", name: "تربية مهنية", icon: "tools" }
 ];
 const SUBJECTS_HIGH = [
+    { id: "math", name: "رياضيات", icon: "book-open" },
     { id: "english", name: "لغة إنجليزية", icon: "book-open" },
     { id: "arabic", name: "لغة عربية", icon: "feather" },
     { id: "islamic", name: "تربية إسلامية", icon: "mosque" },
@@ -358,6 +360,13 @@ const SCHOOL_CUSTOM_LINKS = {
             description: "شروحات تفاعلية ومرئية متميزة لمادة الفيزياء للصف العاشر - الجزء الثاني.",
             url: "https://youtu.be/6z-VXZ42kpQ?si=FEDluNQKg1XT23Vv"
         }
+    ],
+    "11-math-1-lessons": [
+        {
+            title: "المعلمة باسمة أحمد متباينات القيمة المطلقة",
+            description: "شرح مرئي لمادة الرياضيات للصف الأول ثانوي - درس متباينات القيمة المطلقة.",
+            url: "https://youtu.be/G9YR4RtP8OI"
+        }
     ]
 };
 /**
@@ -383,6 +392,7 @@ function getLinksDatabase(classId, subjectId, semesterId, serviceId) {
     const cName = classNameMap[classId] || "";
     
     const subjNameMap = {
+        "math": "الرياضيات",
         "english": "اللغة الإنجليزية",
         "arabic": "اللغة العربية",
         "islamic": "التربية الإسلامية",
