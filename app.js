@@ -367,6 +367,13 @@ const SCHOOL_CUSTOM_LINKS = {
             description: "شرح مرئي لمادة الرياضيات للصف الأول ثانوي - درس متباينات القيمة المطلقة.",
             url: "https://youtu.be/G9YR4RtP8OI"
         }
+    ],
+    "8-science-1-exams": [
+        {
+            title: "اختبار تشخيصي لطالبات الصف الثامن",
+            description: "اختبار تفاعلي محوسب يغطي مقرر مادة العلوم للصف الثامن - الفصل الدراسي الأول مع تصحيح فوري.",
+            url: "https://forms.gle/rNteWEtzmTjuejdT7"
+        }
     ]
 };
 /**
