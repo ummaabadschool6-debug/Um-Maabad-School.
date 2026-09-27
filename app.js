@@ -382,6 +382,13 @@ const SCHOOL_CUSTOM_LINKS = {
             description: "اختبار تفاعلي محوسب يغطي مقرر مادة العلوم للصف السابع - الفصل الدراسي الأول مع تصحيح فوري.",
             url: "https://docs.google.com/forms/d/e/1FAIpQLSfPjwTI4-fqp53helI9MEz1OC92Yc6h66fyUB3OIZN6bkVIsQ/viewform"
         }
+    ],
+    "7-math-1-lessons": [
+        {
+            title: "المعلمة ميس يدك شرح برمجية جيوجبرا",
+            description: "شروحات تفاعليه و مرئية يغطي مقرر مادة العلوم للصف السابع - الفصل الدراسي الأول ي.",
+            url: "https://youtu.be/8bIveJe2kUM?si=w1htnpGUQL26PcWZ"
+        }
     ]
 };
 
