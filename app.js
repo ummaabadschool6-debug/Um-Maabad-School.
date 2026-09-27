@@ -367,7 +367,12 @@ const SCHOOL_CUSTOM_LINKS = {
             title: "المعلمة باسمة أحمد متباينات القيمة المطلقة",
             description: "شرح مرئي لمادة الرياضيات للصف الأول ثانوي - درس متباينات القيمة المطلقة.",
             url: "https://youtu.be/G9YR4RtP8OI"
-        }
+        },
+        {
+           title: "المعلمة باسمة أحمد اعادة تعريف اقتران القيمةالمطلقة1",
+            description: "شرح مرئي لمادة الرياضيات للصف الأول ثانوي - درس متباينات القيمة المطلقة.",
+            url: "https://youtu.be/G9YR4RtP8OI"
+          }  
     ],
     "8-science-1-exams": [
         {
@@ -390,6 +395,7 @@ const SCHOOL_CUSTOM_LINKS = {
             url: "https://youtu.be/8bIveJe2kUM?si=w1htnpGUQL26PcWZ"
         }
     ]
+    
 };
 
 function getLinksDatabase(classId, subjectId, semesterId, serviceId) {
