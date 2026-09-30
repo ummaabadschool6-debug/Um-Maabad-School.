@@ -394,10 +394,17 @@ const SCHOOL_CUSTOM_LINKS = {
             description: "شروحات تفاعليه و مرئية يغطي مقرر مادة العلوم للصف السابع - الفصل الدراسي الأول ي.",
             url: "https://youtu.be/8bIveJe2kUM?si=w1htnpGUQL26PcWZ"
         }
-    ]
-    
-};
+    ],
+    "9-geography-1-lessons": [
+        {
+            title: "المعلمة عبير السعود تعرض تجربة للتجوية و التعرية مع طالباتها",
+            description: "شروحات تفاعلية ومرئية تغطي مقرر مادة الجغرافيا للصف التاسع - الفصل الدراسي الأول ",
+            url: "https://youtube.com/shorts/B_tMw6QyXaY?si=nkauBkxTu6I-BSJf" 
+        } 
+    ]      
 
+    };
+    
 function getLinksDatabase(classId, subjectId, semesterId, serviceId) {
     const customKey = `${classId}-${subjectId}-${semesterId}-${serviceId}`;
     if (SCHOOL_CUSTOM_LINKS[customKey] && SCHOOL_CUSTOM_LINKS[customKey].length > 0) {
