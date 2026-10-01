@@ -362,6 +362,13 @@ const SCHOOL_CUSTOM_LINKS = {
             url: "https://youtu.be/6z-VXZ42kpQ?si=FEDluNQKg1XT23Vv"
         }
     ],
+     "10-math-1-exams": [
+        {
+            title: "امتحان قصير في الوحدة الاولى(المعادلات) للمعلمة ميس يدك",
+            description: "اختبار تفاعلي محوسب يغطي الوحدة الأولى للصف العاشر  - الفصل الدراسي الأول مع تصحيح فوري.",
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSeQ-hs8B1PcDMB9gfYvmTQyFUtk2ar7Irn-evCvynrXw993wg/viewform?usp=dialog"
+        }
+    ],
     "11-math-1-lessons": [
         {
             title: "المعلمة باسمة أحمد متباينات القيمة المطلقة",
