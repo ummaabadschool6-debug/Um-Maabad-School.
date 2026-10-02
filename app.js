@@ -367,6 +367,11 @@ const SCHOOL_CUSTOM_LINKS = {
             title: "امتحان قصير في الوحدة الاولى(المعادلات) للمعلمة ميس يدك",
             description: "اختبار تفاعلي محوسب يغطي الوحدة الأولى للصف العاشر  - الفصل الدراسي الأول مع تصحيح فوري.",
             url: "https://docs.google.com/forms/d/e/1FAIpQLSeQ-hs8B1PcDMB9gfYvmTQyFUtk2ar7Irn-evCvynrXw993wg/viewform?usp=dialog"
+        },
+         {
+            title: "لعبة الكترونية من ثلاث اسئلة ( الاقتران التربيعي ) المعلمة باسمة أحمد",
+            description: "لعبة تفاعلية محوسبة يغطي الوحدة الأولى للصف العاشر  - الفصل الدراسي الأول مع تصحيح فوري.",
+            url: "https://wordwall.net/ar/resource/120361232?wwmethod=link"
         }
     ],
     "11-math-1-lessons": [
